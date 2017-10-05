@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "339338744397",
+    "firebase_url": "https://project--7390121812900505828.firebaseio.com",
+    "project_id": "project--7390121812900505828",
+    "storage_bucket": "project--7390121812900505828.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:339338744397:android:a402383cb8e58e59",
+        "android_client_info": {
+          "package_name": "com.happycity.project.jobme"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "339338744397-81sf0htl4f6qec5h0d7tq2dju8l24dj1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.happycity.project.jobme",
+            "certificate_hash": "8b1bb011d280208669b75582d90a303d4ac33014"
+          }
+        },
+        {
+          "client_id": "339338744397-vctbk47r2sfl2f0d0e1n7ieuk9rr4q90.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBrVwZZ8cqtDcuAuajDJKLGTm8sTm_kDBs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "339338744397-vctbk47r2sfl2f0d0e1n7ieuk9rr4q90.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
