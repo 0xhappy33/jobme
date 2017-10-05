@@ -47,7 +47,7 @@ public class SplashActivity extends AppCompatActivity implements Animation.Anima
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                startActivity(new Intent(SplashActivity.this, MainActivity.class));
+                startActivity(new Intent(SplashActivity.this, ChooseRoleActivity.class));
                 finish();
             }
         }, 3000);

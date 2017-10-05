@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">JobMe</string>
+    <string name="lookingforajob">I\'m looking for a job</string>
+    <string name="lookingforastaff">I\'m looking for a staff</string>
+    <string name="lines">-----------------------</string>
+    <string name="or">OR</string>
 </resources>

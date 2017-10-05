@@ -4,4 +4,7 @@
     <color name="colorPrimaryDark">#F85A5A</color>
     <color name="colorAccent">#FF4081</color>
     <color name="colorBackground">#FF7272</color>
+    <color name="colorButtonLookingForAJob">#E13030</color>
+    <color name="colorButtonLookingForAStaff">#F15E5F</color>
 </resources>
+
