@@ -6,5 +6,7 @@
     <color name="colorBackground">#FF7272</color>
     <color name="colorButtonLookingForAJob">#E13030</color>
     <color name="colorButtonLookingForAStaff">#F15E5F</color>
+    <color name="colorForeground">#fad1d2</color>
+    <color name="colorButtonFacebook">#1b29eb</color>
 </resources>
 

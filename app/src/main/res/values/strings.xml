@@ -2,6 +2,27 @@
     <string name="app_name">JobMe</string>
     <string name="lookingforajob">I\'m looking for a job</string>
     <string name="lookingforastaff">I\'m looking for a staff</string>
-    <string name="lines">-----------------------</string>
+    <string name="lines">------</string>
     <string name="or">OR</string>
+    <string name="email_address">Email address</string>
+    <string name="password">Password</string>
+    <string name="title_activity_sign_in">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="sign_in">Sign In</string>
+    <string name="dont_have_account">Don\'t have account</string>
+    <string name="register">Register</string>
+    <string name="remember_me">Remember me</string>
+    <string name="sign_in_by_facebook">Login in facebook</string>
 </resources>
