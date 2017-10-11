@@ -24,6 +24,7 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
             <EditText
+                android:id="@+id/edtEmailAddress"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/email_address"
@@ -31,15 +32,17 @@
                 android:drawablePadding="20dp"
                 android:textColorHint="@android:color/white"
                 android:padding="20dp"
-                />
+                android:inputType="textEmailAddress" />
             <EditText
+                android:id="@+id/edtPassword"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/password"
                 android:drawableLeft="@drawable/password"
                 android:textColorHint="@android:color/white"
                 android:padding="20dp"
-                android:drawablePadding="20dp"/>
+                android:drawablePadding="20dp"
+                android:inputType="textPassword" />
             <CheckBox
                 android:id="@+id/checkbox_state_login"
                 android:layout_width="wrap_content"
@@ -53,11 +56,9 @@
         </LinearLayout>
         <Button
             android:id="@+id/btnSignIn"
-            android:layout_below="@+id/layout_sign_in_group"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/sign_in"
-            android:layout_centerInParent="true"
             android:layout_marginTop="20dp"
             android:textColor="@android:color/white"
             android:textSize="18sp"
@@ -87,7 +88,6 @@
                 android:textStyle="italic" />
         </LinearLayout>
     </LinearLayout>
-
 
     <Button
         android:drawableLeft="@drawable/facebook_logo"
