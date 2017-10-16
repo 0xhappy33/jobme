@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background_login"
+    tools:context="com.happycity.project.jobme.activity.ChooseRoleActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logo"
+            android:layout_gravity="center"/>
+
+        <Button
+            android:id="@+id/btnLookingForAJob"
+            style="@style/Base.Widget.AppCompat.Button.Colored"
+            android:layout_width="300dp"
+            android:layout_height="52dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/button_looking_a_job"
+            android:fontFamily="Segoe UI"
+            android:text="@string/lookingforajob"
+            android:textSize="17sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            android:weightSum="9"
+            android:layout_margin="10dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:text="@string/lines"
+                android:gravity="center"
+                android:textColor="@android:color/white"/>
+            <TextView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:text="@string/or"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@android:color/white"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:text="@string/lines"
+                android:gravity="center"
+                android:textColor="@android:color/white"/>
+        </LinearLayout>
+        <Button
+            android:id="@+id/btnLookingForAStaff"
+            android:layout_width="300dp"
+            android:layout_height="52dp"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@android:color/white"
+            android:fontFamily="Segoe UI"
+            android:textSize="17sp"
+            android:background="@drawable/button_looking_a_staff"
+            android:text="@string/lookingforastaff" />
+    </LinearLayout>
+
+</RelativeLayout>

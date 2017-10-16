@@ -1,9 +1,11 @@
-package com.happycity.project.jobme;
+package com.happycity.project.jobme.activity;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.EditText;
+
+import com.happycity.project.jobme.R;
 
 public class MainActivity extends AppCompatActivity {
 

@@ -4,8 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+
     android:orientation="vertical"
-    tools:context="com.happycity.project.jobme.MainActivity">
+    tools:context="com.happycity.project.jobme.activity.MainActivity">
 
     <EditText
         android:id="@+id/editTextFullName"
@@ -52,6 +53,7 @@
         android:id="@+id/buttonSend"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+
         android:layout_marginTop="20dp"
         android:layout_gravity="center"
         android:text="Gởi"

@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorPrimary">#FB4949</color>
+    <color name="colorPrimaryDark">#F85A5A</color>
     <color name="colorAccent">#FF4081</color>
+    <color name="colorBackground">#FF7272</color>
+    <color name="colorButtonLookingForAJob">#E13030</color>
+    <color name="colorButtonLookingForAStaff">#F15E5F</color>
+    <color name="colorForeground">#fad1d2</color>
+    <color name="colorButtonFacebook">#1b29eb</color>
 </resources>
+
