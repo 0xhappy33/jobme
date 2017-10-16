@@ -28,7 +28,6 @@ public class LoginActivity extends AppCompatActivity {
     @BindView(R.id.btnSignIn)
     Button btnSignIn;
 
-
     FirebaseDatabase firebaseDatabase;
     DatabaseReference userDataLogin;
 
