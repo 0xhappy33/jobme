@@ -7,4 +7,5 @@ package com.happycity.project.jobme.utils;
  */
 
 public class DBUtils {
+
 }
