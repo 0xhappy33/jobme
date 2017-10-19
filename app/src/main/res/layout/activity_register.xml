@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#E67A7A"
+    tools:context="com.happycity.project.jobme.activity.register.RegisterActivity">
+
+    <!-- back function -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="#ffff">
+        
+        <ImageButton
+            android:id="@+id/imgBtnBackArrow"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginTop="22dp"
+            android:layout_marginLeft="24dp"
+            android:src="@drawable/back_arrow" />
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:layout_marginLeft="36dp"
+            android:text="@string/register" />
+        
+    </LinearLayout>
+
+    <!-- enter information -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- part of name -->
+        <LinearLayout
+            android:id="@+id/llName"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="#ffff">
+
+            <EditText
+                android:id="@+id/edtFirstName"
+                android:layout_width="match_parent"
+                android:layout_height="72dp"
+                android:hint="@string/first_name" />
+
+            <EditText
+                android:id="@+id/edtLastName"
+                android:layout_width="match_parent"
+                android:layout_height="72dp"
+                android:hint="@string/last_name" />
+
+            <!-- next or back button -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#E67A7A">
+
+                <ImageButton
+                    android:id="@+id/imgBtnNext1"
+                    android:layout_width="50dp"
+                    android:layout_height="14dp"
+                    android:layout_marginTop="23dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/next_button" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <!-- part of account -->
+        <LinearLayout
+            android:id="@+id/llAccount"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="#ffff"
+            android:visibility="invisible">
+
+            <EditText
+                android:id="@+id/edtEmail"
+                android:layout_width="match_parent"
+                android:layout_height="72dp"
+                android:hint="@string/email_address" />
+
+            <EditText
+                android:id="@+id/edtPassword"
+                android:layout_width="match_parent"
+                android:layout_height="72dp"
+                android:hint="@string/password"
+                android:inputType="textPassword" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#E67A7A">
+
+                <ImageButton
+                    android:id="@+id/imgBtnBack2"
+                    android:layout_width="50dp"
+                    android:layout_height="14dp"
+                    android:layout_marginTop="23dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_alignParentLeft="true"
+                    android:src="@drawable/back_button" />
+
+                <ImageButton
+                    android:id="@+id/imgBtnNext2"
+                    android:layout_width="50dp"
+                    android:layout_height="14dp"
+                    android:layout_marginTop="23dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/next_button" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <!-- part of phone -->
+        <LinearLayout
+            android:id="@+id/llPhone"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="#ffff"
+            android:visibility="invisible">
+
+            <EditText
+                android:id="@+id/edtPhone"
+                android:layout_width="match_parent"
+                android:layout_height="72dp"
+                android:hint="Phone number"
+                android:inputType="number" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#E67A7A">
+
+                <ImageButton
+                    android:id="@+id/imgBtnBack3"
+                    android:layout_width="50dp"
+                    android:layout_height="14dp"
+                    android:layout_marginTop="23dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_alignParentLeft="true"
+                    android:src="@drawable/back_button" />
+
+                <ImageButton
+                    android:id="@+id/imgBtnNext3"
+                    android:layout_width="50dp"
+                    android:layout_height="14dp"
+                    android:layout_marginTop="23dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/next_button" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </FrameLayout>
+    <!-- next or back button -->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/privacy_policy"
+        android:textColor="#ffff"
+        android:textSize="14dp"
+        android:gravity="center"
+        android:layout_marginTop="42dp" />
+
+</LinearLayout>
