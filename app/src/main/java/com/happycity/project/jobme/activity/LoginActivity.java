@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.Toast;
 
 import com.google.firebase.database.DataSnapshot;
@@ -14,6 +15,7 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 import com.happycity.project.jobme.R;
+import com.happycity.project.jobme.activity.register.RegisterActivity;
 import com.happycity.project.jobme.data.model.User;
 
 import butterknife.BindView;
@@ -28,6 +30,9 @@ public class LoginActivity extends AppCompatActivity {
     @BindView(R.id.btnSignIn)
     Button btnSignIn;
 
+    // Sets up a image button is register button.
+    private ImageButton imgBtnRegister;
+
     FirebaseDatabase firebaseDatabase;
     DatabaseReference userDataLogin;
 
@@ -36,9 +41,28 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
+        // Mapped.
+        addControls();
+        // Solve events.
+        addEvents();
+
         ButterKnife.bind(this);
         initialFirebaseDatabase();
         signInToDatabase();
+    }
+
+    private void addEvents() {
+        imgBtnRegister.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(LoginActivity.this, RegisterActivity.class);
+                startActivity(intent);
+            }
+        });
+    }
+
+    private void addControls() {
+        imgBtnRegister = (ImageButton) findViewById(R.id.imgBtnRegister);
     }
 
     private void signInToDatabase() {

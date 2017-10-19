@@ -6,6 +6,6 @@ package com.happycity.project.jobme.common;
  * into the com.happycity.project.jobme.common
  */
 
-public class NewD {
+public class generalName {
     public static final String USER_INTENT = "username";
 }

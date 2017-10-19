@@ -42,7 +42,8 @@
                 android:textColorHint="@android:color/white"
                 android:padding="20dp"
                 android:drawablePadding="20dp"
-                android:inputType="textPassword" />
+                android:inputType="textPassword"
+                />
             <CheckBox
                 android:id="@+id/checkbox_state_login"
                 android:layout_width="wrap_content"
@@ -64,6 +65,7 @@
             android:textSize="18sp"
             android:background="@color/colorButtonLookingForAJob"
             />
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -77,18 +79,20 @@
                 android:textSize="15sp"
                 android:textColor="@android:color/white"/>
 
-            <TextView
-                android:id="@+id/textView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+            <!-- Here is a image button to open RegisterActivity -->
+            <ImageButton
+                android:id="@+id/imgBtnRegister"
+                android:layout_width="59dp"
+                android:layout_height="18dp"
                 android:layout_marginLeft="10dp"
-                android:text="@string/register"
-                android:textColor="@android:color/holo_blue_bright"
-                android:textSize="15sp"
-                android:textStyle="italic" />
+                android:src="@drawable/register_button" />
         </LinearLayout>
     </LinearLayout>
 
+    <!-- Problem occurs on Tien device: Below button is in front
+    of register button. So, register button is invisible.
+    -->
+<!--
     <Button
         android:drawableLeft="@drawable/facebook_logo"
         android:layout_width="match_parent"
@@ -97,4 +101,5 @@
         android:background="@color/colorButtonFacebook"
         android:textColor="@android:color/white"
         android:layout_alignParentBottom="true"/>
+-->
 </RelativeLayout>
