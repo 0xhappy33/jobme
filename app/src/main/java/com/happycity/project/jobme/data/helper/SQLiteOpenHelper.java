@@ -7,4 +7,5 @@ package com.happycity.project.jobme.data.helper;
  */
 
 public class SQLiteOpenHelper {
+
 }

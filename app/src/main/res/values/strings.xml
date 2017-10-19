@@ -25,4 +25,17 @@
     <string name="register">Register</string>
     <string name="remember_me">Remember me</string>
     <string name="sign_in_by_facebook">Login in facebook</string>
+    <string name="notification">Notification</string>
+    <string name="give_feedback">Give Feedback</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="logout">Logout</string>
+    <string name="fullname">Trang Trang</string>
+    <string name="trang_email">trangnguyen@gmail.com</string>
+    <string name="open">Open</string>
+    <string name="close">Open</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
 </resources>
