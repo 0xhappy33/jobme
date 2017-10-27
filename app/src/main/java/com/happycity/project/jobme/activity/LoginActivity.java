@@ -27,7 +27,7 @@ public class LoginActivity extends AppCompatActivity {
     EditText edtEmailAddress;
     @BindView(R.id.edtPassword)
     EditText edtPassword;
-    @BindView(R.id.btnSignIn)
+
     Button btnSignIn;
 
     // Sets up a image button is register button.
@@ -63,7 +63,9 @@ public class LoginActivity extends AppCompatActivity {
 
     private void addControls() {
         imgBtnRegister = (ImageButton) findViewById(R.id.imgBtnRegister);
+        btnSignIn = (Button) findViewById(R.id.btnSignIn);
     }
+
 
     private void signInToDatabase() {
         btnSignIn.setOnClickListener(new View.OnClickListener() {
