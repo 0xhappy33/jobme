@@ -4,8 +4,9 @@
     <string name="lookingforastaff">I\'m looking for a staff</string>
     <string name="lines">------</string>
     <string name="or">OR</string>
-    <string name="email_address">Email address</string>
-    <string name="password">Password</string>
+    <string name="email_address">Địa chỉ e-mail</string>
+    <string name="username">Nhập tên đăng nhập</string>
+    <string name="password">Nhập mật khẩu</string>
     <string name="title_activity_sign_in">Sign in</string>
 
     <!-- Strings related to login -->
@@ -20,10 +21,10 @@
     <string name="permission_rationale">"Contacts permissions are needed for providing email
         completions."
     </string>
-    <string name="sign_in">Sign In</string>
-    <string name="dont_have_account">Don\'t have account</string>
-    <string name="register">Register</string>
-    <string name="remember_me">Remember me</string>
+    <string name="sign_in">Đăng nhập</string>
+    <string name="dont_have_account">Chưa có tài khoản?</string>
+    <string name="register">Đăng ký</string>
+    <string name="remember_me">Lưu tên tài khoản</string>
     <string name="sign_in_by_facebook">Login in facebook</string>
     <string name="notification">Notification</string>
     <string name="give_feedback">Give Feedback</string>
@@ -41,8 +42,10 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
     <!-- Strings related to register -->
-    <string name="first_name">First name</string>
-    <string name="last_name">Last name</string>
+    <string name="first_name">Nhập tên của bạn</string>
+    <string name="last_name">Nhập họ của bạn</string>
     <string name="privacy_policy">Privacy Policy</string>
+    <string name="create">Tạo</string>
+    <string name="phone_number">Số điên thoại</string>
 
 </resources>

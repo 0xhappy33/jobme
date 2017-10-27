@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.Toast;
@@ -23,32 +24,27 @@ import butterknife.ButterKnife;
 
 public class LoginActivity extends AppCompatActivity {
 
-    @BindView(R.id.edtEmailAddress)
-    EditText edtEmailAddress;
+    @BindView(R.id.edtUserID)
+    EditText edtUserID;
     @BindView(R.id.edtPassword)
     EditText edtPassword;
-    @BindView(R.id.btnSignIn)
-    Button btnSignIn;
-
+    private CheckBox chkSavingUsername;
+    private Button btnSignIn;
     // Sets up a image button is register button.
     private ImageButton imgBtnRegister;
 
     FirebaseDatabase firebaseDatabase;
-    DatabaseReference userDataLogin;
+    DatabaseReference databaseReference;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-
         // Mapped.
         addControls();
         // Solve events.
         addEvents();
-
         ButterKnife.bind(this);
-        initialFirebaseDatabase();
-        signInToDatabase();
     }
 
     private void addEvents() {
@@ -59,56 +55,58 @@ public class LoginActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-    }
-
-    private void addControls() {
-        imgBtnRegister = (ImageButton) findViewById(R.id.imgBtnRegister);
+        signInToDatabase();
     }
 
     private void signInToDatabase() {
         btnSignIn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                signIn(edtEmailAddress.getText().toString(), edtPassword.getText().toString());
+                String userID = edtUserID.getText().toString();
+                String password = edtPassword.getText().toString();
+                if (userID.isEmpty()) {
+                    edtUserID.setError("Bạn chưa nhập email!");
+                }
+                if (password.isEmpty()) {
+                    edtPassword.setError("Bạn chưa nhập mật khẩu");
+                }
+                signIn(userID, password);
             }
         });
     }
 
-    private void signIn(final String email,final String password) {
-        userDataLogin.addListenerForSingleValueEvent(new ValueEventListener() {
+    private void signIn(final String userID, final String password) {
+        // Read from your database.
+        databaseReference.addListenerForSingleValueEvent(new ValueEventListener() {
+            // This method is called once with the initial value and again
+            // whenever data at this location is updated.
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
-                if (dataSnapshot.child(email).exists()){
-                    // check email is empty or not
-                    if(!email.isEmpty()){
-                        User userLogin = dataSnapshot.child(email).getValue(User.class);
-                        if(userLogin.getPassword().equals(password)){
-                            Toast.makeText(LoginActivity.this, "Login Ok haha", Toast.LENGTH_SHORT).show();
-                            startActivity(new Intent(LoginActivity.this, MainActivity.class));
-                            finish();
-                        }else{
-                            Toast.makeText(LoginActivity.this, "Wrong password", Toast.LENGTH_SHORT).show();
-                        }
-                    }else{
-                        Toast.makeText(LoginActivity.this, "Please enter your email", Toast.LENGTH_SHORT).show();
+                if (dataSnapshot.child(userID).exists()) {
+                    User user = dataSnapshot.child(userID).getValue(User.class);
+                    if (user.getPassword().equals(password)) {
+                        Toast.makeText(LoginActivity.this, "Đăng nhập thành công", Toast.LENGTH_SHORT).show();
+                    } else {
+                        Toast.makeText(LoginActivity.this, "Mật khẩu không đúng", Toast.LENGTH_SHORT).show();
                     }
-                }else{
-                    Toast.makeText(LoginActivity.this, "Email is not exists", Toast.LENGTH_SHORT).show();
+                } else {
+                    Toast.makeText(LoginActivity.this, "Tài khoản không đúng", Toast.LENGTH_SHORT).show();
                 }
-
             }
-
             @Override
             public void onCancelled(DatabaseError databaseError) {
-
+                // Failed to read value.
             }
         });
     }
 
-    private void initialFirebaseDatabase() {
+    private void addControls() {
+        chkSavingUsername = (CheckBox) findViewById(R.id.chkSavingUsername);
+        imgBtnRegister = (ImageButton) findViewById(R.id.imgBtnRegister);
+        btnSignIn = (Button) findViewById(R.id.btnSignIn);
+        // Retrieve an instance of your database using getInstance().
         firebaseDatabase = FirebaseDatabase.getInstance();
-        userDataLogin = firebaseDatabase.getReference("Users");
+        // Reference the location you want to write to.
+        databaseReference = firebaseDatabase.getReference("Users");
     }
-
-
 }

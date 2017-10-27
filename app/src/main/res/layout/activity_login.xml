@@ -7,32 +7,37 @@
     android:padding="18dp"
     android:background="@drawable/background_login"
     tools:context="com.happycity.project.jobme.activity.LoginActivity">
+
+    <!-- Displays image, enters account, saves username -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
+        <!-- Displays image -->
         <ImageView
             android:id="@+id/logo_image"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/logo"
-
             android:layout_gravity="center" />
+        <!-- Enters account, saves username -->
         <LinearLayout
             android:id="@+id/layout_sign_in_group"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
+            <!-- Enters username -->
             <EditText
-                android:id="@+id/edtEmailAddress"
+                android:id="@+id/edtUserID"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="@string/email_address"
+                android:hint="@string/username"
                 android:drawableLeft="@drawable/email"
                 android:drawablePadding="20dp"
                 android:textColorHint="@android:color/white"
                 android:padding="20dp"
                 android:inputType="textEmailAddress" />
+            <!-- Enters password -->
             <EditText
                 android:id="@+id/edtPassword"
                 android:layout_width="match_parent"
@@ -42,19 +47,20 @@
                 android:textColorHint="@android:color/white"
                 android:padding="20dp"
                 android:drawablePadding="20dp"
-                android:inputType="textPassword"
-                />
+                android:inputType="textPassword" />
+            <!-- Saves username -->
             <CheckBox
-                android:id="@+id/checkbox_state_login"
+                android:id="@+id/chkSavingUsername"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/remember_me"
                 android:textColor="@android:color/white"
                 android:buttonTint="@android:color/white"
                 android:layout_marginTop="10dp"
-                android:layout_marginLeft="16dp"
-                />
+                android:layout_marginLeft="16dp" />
+
         </LinearLayout>
+
         <Button
             android:id="@+id/btnSignIn"
             android:layout_width="match_parent"
@@ -63,22 +69,21 @@
             android:layout_marginTop="20dp"
             android:textColor="@android:color/white"
             android:textSize="18sp"
-            android:background="@color/colorButtonLookingForAJob"
-            />
-
+            android:background="@color/colorButtonLookingForAJob" />
+        <!-- Register part -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:layout_marginTop="10dp"
             android:gravity="center">
+            <!-- Creates new account -->
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/dont_have_account"
                 android:textSize="15sp"
                 android:textColor="@android:color/white"/>
-
             <!-- Here is a image button to open RegisterActivity -->
             <ImageButton
                 android:id="@+id/imgBtnRegister"
@@ -86,12 +91,14 @@
                 android:layout_height="18dp"
                 android:layout_marginLeft="10dp"
                 android:src="@drawable/register_button" />
+
         </LinearLayout>
+
     </LinearLayout>
 
-    <!-- Problem occurs on Tien device: Below button is in front
-    of register button. So, register button is invisible.
-    -->
+<!-- Problem occurs on Tien device: Below button is in front
+     of register button. So, register button is invisible.
+-->
 <!--
     <Button
         android:drawableLeft="@drawable/facebook_logo"
@@ -102,4 +109,5 @@
         android:textColor="@android:color/white"
         android:layout_alignParentBottom="true"/>
 -->
+
 </RelativeLayout>
