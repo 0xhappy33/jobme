@@ -7,24 +7,27 @@ package com.happycity.project.jobme.data.model;
  */
 
 public class User {
-    private String email;
     private String firstName;
     private String lastName;
+    private String email;
+    private String username;
     private String password;
     private String phoneNumber;
 
-    public User(){}
+    public User(){
+        // Default constructor required for calls to DataSnapshop.getValue(User.class).
+    }
 
-    public User(String email, String firstName, String lastName, String password, String phoneNumber) {
-        this.email = email;
+    public User(String firstName, String lastName, String email, String password, String phoneNumber) {
         this.firstName = firstName;
         this.lastName = lastName;
+        this.email = email;
         this.password = password;
         this.phoneNumber = phoneNumber;
     }
 
     public String getFirstName() {
-        return firstName;
+        return this.firstName;
     }
 
     public User setFirstName(String firstName) {
@@ -33,7 +36,7 @@ public class User {
     }
 
     public String getLastName() {
-        return lastName;
+        return this.lastName;
     }
 
     public User setLastName(String lastName) {
@@ -42,7 +45,7 @@ public class User {
     }
 
     public String getEmail() {
-        return email;
+        return this.email;
     }
 
     public User setEmail(String email) {
@@ -50,8 +53,14 @@ public class User {
         return this;
     }
 
+    public String getUsername() { return this.username; }
+
+    public void setUsername(String username) {
+        this.username = username;
+    }
+
     public String getPassword() {
-        return password;
+        return this.password;
     }
 
     public User setPassword(String password) {
@@ -60,7 +69,7 @@ public class User {
     }
 
     public String getPhoneNumber() {
-        return phoneNumber;
+        return this.phoneNumber;
     }
 
     public User setPhoneNumber(String phoneNumber) {
