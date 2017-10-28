@@ -2,6 +2,7 @@ package com.happycity.project.jobme.activity.register;
 
 import org.junit.After;
 import org.junit.Before;
+import org.junit.Test;
 
 import static org.junit.Assert.*;
 
@@ -13,7 +14,10 @@ public class RegisterActivityTest {
     public void setUp() throws Exception {
 
     }
+    @Test
+    public void testFirstName() {
 
+    }
     @After
     public void tearDown() throws Exception {
 

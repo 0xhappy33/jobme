@@ -24,7 +24,7 @@ public class RegisterActivity extends AppCompatActivity {
     private ImageButton imgBtnBackArrow;
     // Part of name.
     private LinearLayout llName;
-    private EditText edtFirstName;
+    EditText edtFirstName;
     private EditText edtLastName;
     private ImageButton imgBtnNext1;
     // Part of account.
