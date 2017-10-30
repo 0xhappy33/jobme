@@ -73,7 +73,6 @@ public class LoginActivity extends AppCompatActivity {
 
     private void signInToDatabase() {
         btnSignIn.setOnClickListener(new View.OnClickListener() {
-            @RequiresApi(api = Build.VERSION_CODES.GINGERBREAD)
             @Override
             public void onClick(View v) {
                 String userID = edtUserID.getText().toString();

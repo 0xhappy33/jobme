@@ -1,7 +1,6 @@
 package com.happycity.project.jobme.activity;
 
 import com.google.firebase.database.DataSnapshot;
-import com.happycity.project.jobme.data.model.User;
 
 import org.junit.After;
 import org.junit.Before;
