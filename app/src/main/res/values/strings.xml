@@ -47,5 +47,9 @@
     <string name="privacy_policy">Privacy Policy</string>
     <string name="create">Tạo</string>
     <string name="phone_number">Số điên thoại</string>
+    <string name="profile">Profile</string>
+    <string name="chat_bottom">Chat</string>
+    <string name="history_bottom">History</string>
+    <string name="job_bottom">Jobs</string>
 
 </resources>

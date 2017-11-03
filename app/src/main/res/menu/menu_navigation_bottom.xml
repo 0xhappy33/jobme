@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/profile_bottom"
+        android:icon="@drawable/ic_perm_contact_calendar_black_24dp"
+        android:title="@string/profile"/>
+    <item android:id="@+id/history_bottom"
+        android:icon="@drawable/ic_history_black_24dp"
+        android:title="@string/history_bottom"/>
+    <item android:id="@+id/job_bottom"
+        android:icon="@drawable/ic_goal_course_black_24dp"
+        android:title="@string/job_bottom"/>
+    <item android:id="@+id/chat_bottom"
+        android:icon="@drawable/ic_message_black_24dp"
+        android:title="@string/chat_bottom"/>
+    <item android:id="@+id/feedback_bottom"
+        android:icon="@drawable/ic_feedback_black_24dp"
+        android:title="@string/give_feedback"/>
+</menu>
